@@ -1,0 +1,409 @@
+body {
+  background-image: url('../images/Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+li, .submenu_item {
+  font-family: 'Pathway Gothic One', Arial, sans-serif;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1024px;
+  padding: 92px 70px 94px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.menu_item {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  border-radius: 10%;
+  width: 80px;
+  height: 125px;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  background-color: #fff;
+  right: -9px;
+}
+
+.submenu::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  top: -5px;
+  left: 30px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.submenu_item {
+  display: inline-block;
+  color:#6b7488;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1px;
+}
+
+.submenu a {
+  line-height: 1px;
+  color: #6b7488;
+}
+
+.menu_item:hover >.submenu {
+  display: block;
+  color: #263555
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header a:hover {
+  color: #263555
+}
+
+.logo {
+  width: 136px;
+  height: 136px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-family: 'Dorsa', Arial, sans-serif;
+  font-size: 59px;
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+  line-height: 136px;
+}
+
+h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+h2, h3, blockquote, .logo {
+  color: #263555;
+  font-weight: 200;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+article h2 {
+  padding-bottom: 47px;
+}
+
+.wrapper {
+  width: 1024px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+article main {
+  padding: 50px 50px 0;
+}
+
+.content {
+  display: flex;
+  border-bottom: 1px solid #8d8a8a;
+  padding: 10px 0;
+}
+
+.main_block {
+  vertical-align: top;
+  width: 70%;
+  }
+
+img {
+  float: left;
+  padding-right: 15px;
+}
+
+.block h2 {
+  text-align: left;
+}
+
+.block {
+  width: 23%;
+  padding-left: 50px;
+}
+
+.list_block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
+.block li {
+  list-style-type: none;
+  position: relative;
+  color: #000;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+
+.block li::before {
+  border: 1px solid #1297fb;
+  background-color: #62a1bd;
+  color: #fdf9f9;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  left: -40px;
+  line-height: 25px;
+  top: 3px;
+  padding-bottom: -2px;
+  position: absolute;
+  text-align: center;
+}
+
+.first::before {
+  content: '1';
+}
+
+.second::before {
+  content: '2';
+}
+
+.third::before {
+  content: '3';
+}
+
+.block2 {
+  display: flex;
+  padding-top: 30px;
+}
+
+.offer {
+  width: 65%;
+}
+
+.testimonial {
+  vertical-align: top;
+  display: inline-block;
+  width: 22%;
+  padding-left: 65px;
+}
+
+.testimonial h2 {
+  text-align: center;
+  padding-left: 35px;
+}
+
+blockquote::before {
+  content: '\0022';
+}
+
+blockquote::after {
+  content: '\0022';
+}
+
+blockquote {
+  position: relative;
+  width: 160px;
+  heigth: 200px;
+  padding: 20px;
+  margin-left: 20px;
+  border: 1px solid #8d8a8a;
+  background-color: #f0e7e7;
+}
+
+.quote::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #f0e7e7;
+  border-left: 30px solid transparent;
+  border-right: 31px solid transparent;
+  bottom: -31px;
+  left: 79px;
+}
+
+.quote::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 48px solid #8d8a8a;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  bottom: -35px;
+  left: 84px;
+}
+
+.block3 {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.list li {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  width: 250px;
+  margin-left: -20px;
+}
+
+.list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url('../images/mark.png');
+  left: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.name {
+  text-align: center;
+}
+
+.bottom_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #30455b;
+  height: 128px;
+  width: 100%;
+  margin: 0;
+}
+
+footer a {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.addition {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  width: 70%;
+}
+
+.addition li {
+  margin: 0;
+}
+
+.telephone {
+  color: #fff;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  padding-top: 12px;
+}
+
+.bottom_menu2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  list-style: none;
+}
+
+.social-media-list a {
+  display: block;
+  width: 50px;
+  height: 49px;
+  border-radius: 50%;
+  background-image: url('../images/About_1024-Recovered-Recovered.jpg');
+}
+
+.social-media-list .twitter {
+  background-position: -24px -31px;
+}
+
+.social-media-list .facebook {
+  background-position: -78px -31px;
+}
+
+.social-media-list .g-plus {
+  background-position: -130px -31px;
+}
+
+.social-media-list .linkedin {
+  background-position: -183px -31px;
+}
+
+.policy {
+  color: #fff;
+  font-size: 12px;
+  bottom: -997px;
+}
+
+.botton-to-top a {
+  position: fixed;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #38afe5;
+  bottom: 197px;
+  left: 1212px;
+}
+
+.botton-to-top a::before {
+  content: '\2191';
+  position: absolute;
+  bottom: 9px;
+  left: 11px;
+  color: #fff;
+}
